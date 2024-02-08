@@ -1,0 +1,135 @@
+/* DISCLAIMER: le code n est pas range */
+
+@font-face {
+  font-family: gunny;
+  src: url('../ressources/font/gunny_rewritten/gnyrwn971.ttf') format('truetype');
+}
+@font-face {
+  font-family: walkaway;
+  src: url('../ressources/font/walkway/Walkway\ rounded.ttf') format('truetype'); /*au final n a jamais servie*/
+}
+@keyframes fade-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  color:#3d3d3d;
+}
+
+body{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background:linear-gradient(to right,burlywood, blanchedalmond,burlywood);
+  width: 100vw;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+header{
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 1;
+  backdrop-filter: brightness(0.95);
+  padding:1vh;
+  backdrop-filter: blur(1px);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+footer{
+  width: 100vw;
+  height: 10vh;
+  /* background-color: #0005; */
+  background-color: #444440;
+  color: white;
+  text-align:center;
+  line-height: 10vh;
+  bottom:0;
+  font-weight: bold;
+  display: fixed;
+  font-family: gunny;
+}
+
+a{
+  text-decoration: none;
+  color:chocolate;
+  font-weight: bold;
+}
+
+li{
+  list-style: none;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-top {
+  animation: fade-top 1s ease-in;
+}
+
+#skills{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutme,#references,#edu,#contact{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  gap:1vh;
+  align-items: center;
+  padding:5vh 0;
+}
+
+#aboutme p, #references p{
+  border-bottom: #3d3d3d 1px solid;
+}
+
+#aboutme>div, #references>div,#edu>div, #contact>div{ /* a ce niveau là j aurais peut etre du faire une classe*/
+  padding: 25px;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+#edu .timeline-item{
+  border-left: #3d3d3d 2px solid;
+  padding-left:10px;
+}
+
+#aboutme img{
+  border-radius: 25px;
+  height: 30em;
+  width: 30em;
+  object-fit: cover;
+  image-rendering: optimizeSpeed;
+  border:white 10px solid;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,129 @@
+/* Et parcequ'il faut toujours citer ses sources: https://www.codingnepalweb.com/skills-bar-ui-design-web-data/ */
+/* Des modifications ont été apportées */
+.skill-bars{
+  padding: 25px 30px;
+  min-width: 600px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.skill-bars.reveal:not(.active){
+  display: none;
+}
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:#3d3d3d;
+  /* color: */
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.web span{
+  width: 90%;
+}
+.bar .progress-line.data span{
+  width: 86%;
+}
+.bar .progress-line.unix span{
+  width: 58%;
+}
+.bar .progress-line.csharp span{
+  width: 69%;
+}
+.bar .progress-line.python span{
+  width: 72%;
+}
+.bar .progress-line.office span{
+  width: 74%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.web span::after{
+  content: "90%";
+}
+.progress-line.data span::after{
+  content: "86%";
+}
+.progress-line.unix span::after{
+  content: "58%";
+}
+.progress-line.csharp span::after{
+  content: "69%";
+}
+.progress-line.python span::after{
+  content: "72%";
+}
+.progress-line.office span::after{
+  content: "74%";
+}

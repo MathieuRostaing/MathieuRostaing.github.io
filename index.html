@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Les styles, certaines parties on ete separes pour des raisons de lisibilite -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homeSlider.css">
+    <link rel="stylesheet" href="css/downloadBtn.css">
+    <link rel="stylesheet" href="css/skillbar.css">
+    <link rel="stylesheet" href="css/slider.css"> 
+    <!-- Pour avoir les jolies icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mathieu ROSTAING</title>
+  </head> 
+  <body>
+    <main>
+      <div id="home">
+        <div class="container container_solid">
+          <div class="title_wrapper">
+            <h1>Greetings,</h1>
+          </div>
+        </div>
+        <div class="container container_image" aria-hidden="true">
+          <div class="title_wrapper">
+            <h1>I am Mathieu.</h1>
+          </div>
+        </div>
+      </div>
+      <header> <!-- Deplace apres coup car c est mieux ^^' -->
+        <div id="download_button_container">
+          <a href="ressources/docs/CV.pdf" target="_blank" class="download">
+            <span class="download_text">Download my resume</span>
+            <div class="download_drow1"></div>
+            <div class="download_drow2"></div>
+          </a>
+        </div>
+      </header> 
+      <!-- Infos generales -->
+      <div id="aboutme">
+        <img src="ressources/img/my_face.jpg" id="myface" class="reveal fade-top">
+        <div class="reveal fade-top">
+          <h2>I am Mathieu ROSTAING !</h2>
+          I am a french IT student at IUT Annecy (University of Savoy) since 2022. I would like to analyse data. I am craving to learn more. I like challenges and when I get into one there is no limit to my <span style="color:purple">perseverance</span> and <span style="color:darkred">determination</span>.
+          <p><i class="fa fa-calendar-o"></i> Date of birth:</p>29th May 2004
+          <p><i class="fa fa-id-card-o"></i> Nationality:</p>French
+          <p><i class="fa fa-language"></i> Languages:</p>
+          French (native/C2)
+          <br/>English (advanced-intermediate/B2)
+          <br/>Italian (pre-intermediate/A2)
+          <br/>German (beginner/A1)<br/>
+        </div>
+      </div>
+      <!-- Infos contact -->
+      <div id="contact" class="reveal fade-top">
+        <div>
+          <p><i class="fa fa-envelope-open-o"></i> e-Mail</p>mathieu.rostaing@etu.univ-smb.fr
+        </div>
+        <div>
+        <p><i class="fa fa-linkedin"></i> LinkedIn</p>
+          <a href="linkedin.com/in/mathieu-rostaing-715307259" target="_blank">linkedin.com/in/mathieu-rostaing-715307259</a>
+        </div>
+      </div>
+      <!-- Infos formations -->
+      <div id="edu">
+        <div class="reveal fade-top">
+          <h2>My studies...</h2>
+          <div class="timeline-item">
+            <h3>BUT Informatique</h3>
+            <h5>Technical Bachelor's Degree in computer science</h5>
+            <div>2022-2026</div>
+          </div>
+          <div class="timeline-item">
+            <h3>French Baccalaureate</h3>
+            <h5>High School diploma specialised in science and IT with <u>highest honors</u></h5>
+            <div>2019-2022</div>
+          </div>
+        </div>
+      </div>
+      <!-- References -->
+      <div id="references" class="reveal fade-top">
+        <div>
+          <h5>Reference 1</h5>
+          <h3>Stephanie VIBRAC</h3>
+          <p>Lecturer in English for Professional Communication</p>
+          <i class="fa fa-envelope-open-o"></i> stephanie.vibrac@univ-smb.fr
+        </div>
+        <div>
+          <h5>Reference 2</h5>
+          <h3>Pascal COLIN</h3>
+          <p>Lecturer in IT</p>
+          <i class="fa fa-envelope-open-o"></i> pascal.colin@univ-smb.fr
+        </div>
+      </div>
+      <!-- Source dans le css associé -->
+      <div class="skill-bars reveal fade-top">
+        <h2>My skills...</h2>
+        <div class="bar">
+          <div class="info">
+            <span>Designing dynamic webpages</span>
+          </div>
+          <div class="progress-line web">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Creating database (PostgresSQL)</span>
+          </div>
+          <div class="progress-line data">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Using Unix environment</span>
+          </div>
+          <div class="progress-line unix">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>C#</span>
+          </div>
+          <div class="progress-line csharp">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Python</span>
+          </div>
+          <div class="progress-line python">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Using Microsoft Office</span>
+          </div>
+          <div class="progress-line office">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- Infos projets -->
+      <div id="projects" class="slider reveal fade-top">
+        <div class="card">
+          <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/langfr-800px-BMW_logo_%28gray%29.svg.png" alt="" />
+          </div>
+          <h2>BMW website (in progress)</h2>
+          <p>2nd year BUT’s group project for which I had to reproduce a website with a review to the customer on a weekly basis.</p>
+          <p><a href="http://51.83.36.122:6968" target="_blank">Check it out !</a> (might not work if the server is not running.)</p>
+          <div class="tags">
+            <div>Team project</div>
+            <div>Data</div>
+            <div>GDPR</div>
+            <div>Motorcycle</div>
+            <div>Web</div>
+            <div>Laravel</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="ressources/img/Hypolux.png" alt="" />
+          </div>
+          <h2>Hypolux Adventure</h2>
+          <p>Hypolux Adventure is a rogue-like game developped in a total of 2 weeks.</p>
+          <p>You're an treasure seeker and you heard about a gloomy cave that hides a treasure at the top of it's core. 
+          But this place is inhabited by dangereous creatures...</p>
+          <p>Check out the <a href="https://github.com/KevinGr19-Univ/HypoluxAdventure" target="_blank">GitHub</a>.</p>
+          <div class="tags">
+            <div>Team project</div>
+            <div>Video game</div>
+            <div>MonoGame C#</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/3/3b/Raspberry_Pi_logo.svg/langfr-800px-Raspberry_Pi_logo.svg.png" alt="" />
+          </div>
+          <h2>Wordpress website</h2>
+          <p>I had to run a wordpress website, this website was host using a raspberry that I setted up from the OS to the security.</p>
+          <p> The raspberry was running a <a href="https://dietpi.com/" target="_blank">DietPI OS</a> (a Raspberry Pi OS optimised fork).
+          Want more details ? Check the <a href="ressources/docs/InstallationGuideFinal.pdf" target="_blank">installation guide</a> I made. </p>
+          <div class="tags">
+            <div>Team project</div>
+            <div>Raspberry</div>
+            <div>Unix</div>
+            <div>Safety</div>
+            <div>Networking</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Je sais toujours pas pourquoi on y met -->
+    <footer>
+      &copy; 2023 Mathieu ROSTAING
+    </footer>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
