@@ -4,10 +4,7 @@
   font-family: gunny;
   src: url('../ressources/font/gunny_rewritten/gnyrwn971.ttf') format('truetype');
 }
-@font-face {
-  font-family: walkaway;
-  src: url('../ressources/font/walkway/Walkway\ rounded.ttf') format('truetype'); /*au final n a jamais servie*/
-}
+
 @keyframes fade-top {
   0% {
     transform: translateY(-50px);
